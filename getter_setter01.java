@@ -1,4 +1,4 @@
-
+/* 
 class labur{
     private String name;
     private int sellery;
@@ -20,6 +20,7 @@ this.sellery = sellery;
         System.out.println("sellery too low");
     }
 }
+// getter data 
 public String getname(){
     return name;
 }
@@ -41,11 +42,68 @@ public void disaplaydata(){
 }
 
 
-}
+}*/
 
+
+class human{
+   private String name;
+    private int age;
+  private  String  gender;
+
+    //setter mthod
+    public void  setage(int age){
+        if (age >= 75) {
+            this.age = age;
+        }
+
+        else{
+            System.out.println("human are not much old");
+        }
+            
+
+        }
+    
+
+ public void setname( String name){
+    this.name = name;
+  } 
+
+  
+  public void setgender( String gender){
+    this.gender = gender;
+  }
+
+  // getter method
+
+  public int getage(){
+    return age;
+  }
+
+  public String getname(){
+    return name;
+  }
+
+  public String getgender(){
+    return gender;
+  }
+
+
+  void display(){
+    System.out.println( "HUMAN AGE " + age);
+    System.out.println( "HUMAN NAME " + name);
+    System.out.println( "HUMAN GENDER " + gender);
+  }
+
+
+  public void increseage(int newage){
+    age = age + newage;
+  }
+  
+
+}
 public class getter_setter01 {
 public static void main(String[] args) {
- 
+ /* 
     System.out.println("data start");
     labur a = new labur();
 a.setname("jishankhan");
@@ -59,7 +117,22 @@ a.incresesellery(5000);
 
 System.out.println(" New seller after increase " + a.getsellery());
 a.getsellery();
+*/
 
+
+
+
+human a = new human();
+a.setage(100);
+a.setname("sabbbir khan");
+a.setgender("MALE");
+
+a.getage();
+a.getname();
+a.getgender();
+System.out.println("old age");
+a.display();
+System.out.println("New age " + a.getage() );
 }    
 }
 
