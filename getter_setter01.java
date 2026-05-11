@@ -59,7 +59,7 @@ class human{
         else{
             System.out.println("human are not much old");
         }
-            
+                    
 
         }
     
@@ -133,7 +133,9 @@ a.getgender();
 System.out.println("old age");
 a.display();
 System.out.println("New age " + a.getage() );
-}    
+
+} 
+
 }
 
 
